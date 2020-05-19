@@ -47,7 +47,7 @@
       },
 
       editTodolists(todolist){
-        if(todolist.table ==='') return
+        if(todolist.table ==='') return // 防呆 對話視窗
         this.$emit('edit:todolist' ,todolist.id, todolist)
         this.editing = null
       }
